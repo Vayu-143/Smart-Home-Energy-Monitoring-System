@@ -72,30 +72,29 @@ The project combines:
 
 ---
 
-## 🏗 System Architecture
+# System Architecture
 
-```text
+The Smart Home Energy Monitoring System collects voltage and current data from sensors (simulated using Wokwi), processes the readings using ESP32 and Python, stores data locally in CSV format, uploads real-time metrics to ThingSpeak Cloud, and visualizes energy consumption through a Streamlit dashboard.
+
+![System Architecture](images/system_architecture.png)
+
+### Workflow
+
 Voltage Sensor
-       │
-       ▼
+↓
 Current Sensor
-       │
-       ▼
+↓
 ESP32 Controller
-       │
-       ▼
-Python Processing
-       │
- ┌─────┴─────┐
- ▼           ▼
-CSV Log   ThingSpeak Cloud
- │           │
- ▼           ▼
-Reports   Live Charts
-     │
-     ▼
+↓
+Power & Energy Calculation
+↓
+CSV Logging
+↓
+ThingSpeak Cloud
+↓
 Streamlit Dashboard
-```
+↓
+Overload Alert Detection
 
 ---
 
@@ -214,6 +213,44 @@ Components Used:
 - Buzzer
 
 Simulation allows testing without physical hardware.
+
+---
+
+# Project Screenshots
+
+## Wokwi Circuit Simulation
+
+![Wokwi Circuit](images/wokwi_circuit.png)
+
+---
+
+## ThingSpeak Dashboard
+
+![ThingSpeak Dashboard](images/thingspeak_dashboard.png)
+
+---
+
+## Streamlit Dashboard
+
+![Streamlit Dashboard](images/streamlit_dashboard.png)
+
+---
+
+## Terminal Output
+
+![Terminal Output](images/terminal_output.png)
+
+---
+
+## CSV Log
+
+![CSV Log](images/csv_log.png)
+
+---
+
+## System Architecture
+
+![Architecture](images/system_architecture.png)
 
 ---
 
