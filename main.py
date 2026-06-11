@@ -9,7 +9,7 @@ import requests
 # CONFIGURATION
 # ==========================================
 
-CHANNEL_API_KEY = "YKRO5WKSVGGEWJSK"  # ThingSpeak Write API Key
+CHANNEL_API_KEY = "Yyour_write_api-key"  # ThingSpeak Write API Key
 TARIFF = 8  # ₹ per kWh
 
 energy_kwh = 0
